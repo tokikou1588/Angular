@@ -33,6 +33,26 @@ Angular项目启动过程分析
 	4)app.component.ts-->selector:'app-root'
 						>templateUrl:'app.component.html'
 	5)app.component.html-->HTML片段
+2.Angular核心概念之一：模块
+	Module：不同于Node.js或者ES6 中的模块的模块，NG中的模块就是一个抽象容器，用于对组件进行分组
+	整个应用初始时只有一个主模板： AppModule
+
+3.Angular核心概念之二：组件
+	组件：是一段可以反复使用的页面片段，如页头，轮播，手风琴
+	组件（component） = 模板(Templete) + 脚本(Script) + 样式(Style)
+	提示: NG中，任何一个组件都必须声明在一个模块中！
+	自定义组件步骤
+		1；创建组件class
+			@Component({
+			     selector:'myc01',//选择器 属性的话-->[mytitle] , 元素的话-->mytitle, class的话--> .mytitle
+			     template:'<h2>我的组件C01</h2><hr>' // 模板
+	 		})
+			export class MyC01Component{
+			
+			}
+		
+		2；在某一个模块中注册组件 class 
+		3：使用已经注册过的组件	
 
 
 
