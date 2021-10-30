@@ -18,3 +18,30 @@ npm i -g !angular/cli
 CMD---> npm start ---> http://127.0.0.1:4200/  确认项目是否正常启动
 
 <html lang="en"> ---> en是代表英文
+
+Modle 	模型
+Module 	模块 node.js   ES6    NG-->Angular 
+Modal 	模态对话框
+
+Angular项目启动过程分析
+	1）angular。json NG项目的配置文件
+		index；./src/index.html		<app-root></app-root>
+		main；./src/main.ts
+	2)main.js --> bootstrapModule(AppModule) 
+		bootstrap-->引导启动 Module-->模块 AppModule-->app模块
+	3)app.module.ts--> boostrap:[AppComponent]
+	4)app.component.ts-->selector:'app-root'
+						>templateUrl:'app.component.html'
+	5)app.component.html-->HTML片段
+
+
+
+
+
+
+
+
+
+
+
+
