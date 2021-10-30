@@ -1,0 +1,20 @@
+Angular的??地址	
+	npm config get registry
+	https://registry.npmjs.org/
+angular 安装的?候，需要??  nodejs 的版本
+全局的安装路径都是安装在
+	C:\Users\Administrator\AppData\Roaming\npm
+	
+npm i -g !angular/cli
+安装好之后文件下面会有?几个文件
+	C:\Users\Administrator\AppData\Roaming\npm\ng.cmd
+	C:\Users\Administrator\AppData\Roaming\npm\ng.ps1
+	C:\Users\Administrator\AppData\Roaming\npm\node_modules
+	C:\Users\Administrator\AppData\Roaming\npm\ng
+
+项目路径
+	D:\Project\Angular
+	
+CMD---> npm start ---> http://127.0.0.1:4200/  确认项目是否正常启动
+
+<html lang="en"> ---> en是代表英文
