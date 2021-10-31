@@ -1,0 +1,23 @@
+<p>myc08-ngif works!</p>
+
+<!-- <div *ngIf ="isPayingUser">
+  此区域的内衣仅为付费用户可见
+</div> -->
+<div *ngIf ="isPayingUser;else elseBlock">
+  此区域的内衣仅为付费用户可见--->这是if的内容
+</div>
+<!-- // #elseBlock #编号 -->
+<ng-template #elseBlock>这个是else的内容</ng-template>
+<hr>
+<div *ngIf="age>=30; else weichengnian">
+  这是家长看到的内容 <br>
+</div>
+<ng-template #weichengnian>
+  这是未成年看到的内容
+</ng-template>
+<hr>
+<button *ngIf="hasMore; else noMore" (click) = "loadMore()">加载更多</button>
+<ng-template #noMore>
+  <hr>
+  <p>已经到数据底线了</p>
+</ng-template>

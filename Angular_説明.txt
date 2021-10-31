@@ -82,9 +82,27 @@ Node.js 官方安装的工具
 	2）属性绑定			Vue.js--> v-bind 
 		形式 1；直接在属性上{{}} --》<p title="{{uname}}">
 		形式 2：直接在属性上[[]]	<p [title]="uname">
-	3）指令绑定
-	4）事件绑定			Vue.js: v-on 
+		[title]="'当前购买数量:'+count" ---> 绑定常量的话，必须加 '常量'
+		 <img [src]="'../assets/'+imgUrl" alt="">
+		 注意；属性绑定通常赋值为变量，如果赋值为常量（如字符串常量）
+		 必须用引号括起来，如 <img [src]="'../assets/'+imgUrl" alt="">
+	3）事件绑定			Vue.js: v-on 
+		 <button (click)="jianshao()">
+		 注意；事件名用（）括起来，处理函数名后必须添加（）
+	4）指令绑定
+		Vue.js--> v-on,v-bind,v-for,v-if,v-show
+		1；循环绑定；*ngFor
+			<ANY *ngFor = "let 临时变量 of 数据">{{e}}</ANY>
+			<ANY *ngFor = "let 临时变量 of 数据; let i = index;">{{i}}-{{e}}</ANY>
+			<ANY *ngFor = "let 临时变量 of 数据; index as i">{{i}}-{{e}}</ANY>
+		2：选择绑定；*ngif
+			<ANY *ngIf = "布尔表达式">
+			说明；如果为false的话，当前元素从 DOM树上删除
+		3；样式绑定 [ngStyle]
+			说明；ngstyle绑定的值必须是一个对象，对象的属性就是css就是样式名
 	5）双向数据绑定
+	
+assets --> 资源目录
 
 
 
