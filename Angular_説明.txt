@@ -52,11 +52,39 @@ Angular项目启动过程分析
 			}
 		
 		2；在某一个模块中注册组件 class 
+			@NgModule({
+			  declarations: [   // declarations:宣言/声明/宣称
+			    AppComponent,
+			    MyC01Component,
+			  ],
 		3：使用已经注册过的组件	
+			<h2>我的Angular项目01</h2>
+			<hr>
+			<myc01></myc01>
+Angular 提供的创建组件的简化工具	generate-->生成
+	Angular安装可以使用		ng g component 组件名
+	Angular未安装可以使用 	npx ng g component 组件名
+Node.js 官方安装的工具
+	npm；第三方模块的维护工具
+	npx；第三方可执行文件的执行工具，NodePackage Executor
+	npx 可用于执行当前项目中 node_modules/.bin 目录下的可执行文件
 
-
-
-
+4.Angular核心概念之三：数据绑定
+	1).HTML绑定：{{ NG表达式 }}
+		测试：NG表达式中可以执行哪些代码？
+		算术运算
+		比较运算
+		逻辑运算
+		三目运算
+		调用函数
+		创建对象  ----> NO
+		JSON序列化，JSON.string	----> NO
+	2）属性绑定			Vue.js--> v-bind 
+		形式 1；直接在属性上{{}} --》<p title="{{uname}}">
+		形式 2：直接在属性上[[]]	<p [title]="uname">
+	3）指令绑定
+	4）事件绑定			Vue.js: v-on 
+	5）双向数据绑定
 
 
 

@@ -1,0 +1,17 @@
+<p>myc05 works!</p>
+<hr>
+<div>用户名：{{uname}}</div>
+<div>年龄：{{age}}</div>
+<div>算术运算-->后年年龄：{{age+2}}</div>
+<div>成年了吗：{{age>=18}}</div>
+<div>成年了吗：{{age>=18? '成年':'未成年'}}</div>
+<div>在法定工资年龄吗：{{age>=18 && age < 60}}</div>
+<div>用户名长度：{{uname.length}}</div>
+<div>用户名大写形式：{{uname.toUpperCase()}}</div>
+<div>用户名中下标为2的字符：{{uname[2]}}</div>
+<!-- <div>当前时间：{{new String()}}</div> -->
+<hr>
+<p title="{{uname}}">sdjlfjdslfjojsdflkjlfkdsjklfdsjlk</p>
+<p [title]="uname">sdjlfjdslfjojsdflkjlfkdsjklfdsjlk</p>
+<hr>
+<button (click)="printUname()">输出用户名</button>
